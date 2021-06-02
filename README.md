@@ -29,7 +29,7 @@ FAISS:
 
 # Training
 
-Following command can be used to train the MSF 
+Following command can be used to train the CMSF(Supervised Learning) 
 
 ```
 python train_sup_msf.py \
