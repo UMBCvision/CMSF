@@ -32,7 +32,7 @@ FAISS:
 Following command can be used to train the MSF 
 
 ```
-python train_msf.py \
+python train_sup_msf.py \
   --cos \
   --weak_strong \
   --learning_rate 0.05 \
@@ -43,6 +43,7 @@ python train_msf.py \
   --mem_bank_size 128000 \
   --checkpoint_path <CHECKPOINT PATH> \
   <DATASET PATH>
+  
 ```
 
 # License
