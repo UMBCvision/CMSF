@@ -29,7 +29,44 @@ FAISS:
 
 # Training Self-Supservised CMSF-KM
 
+```
+python self_supervised/train_msf_km.py \
+  --cos \
+  --weak_strong \
+  --learning_rate 0.05 \
+  --epochs 200 \
+  --arch resnet50 \
+  --topk 5 \
+  --momentum 0.99 \
+  --mem_bank_size 128000 \
+  --num_clusters 50000 \
+  --checkpoint_path <CHECKPOINT PATH> \
+  <DATASET PATH>
+  
+```
+
+  
+  
+
 # Training Self-Supservised CMSF-2Q
+
+```
+python self_supervised/train_msf_2q.py \
+  --cos \
+  --weak_strong \
+  --learning_rate 0.05 \
+  --epochs 200 \
+  --arch resnet50 \
+  --topk 5 \
+  --momentum 0.99 \
+  --mem_bank_size 128000 \
+  --topkp 5 \
+  --checkpoint_path <CHECKPOINT PATH> \
+  <DATASET PATH>
+  
+```
+
+
 
 # Training Supservised 
 
